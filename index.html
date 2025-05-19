@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
   <head>
-    <!-- Basic -->
+    <!-- Metadados Básicos -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
+    <!-- Configurações para Dispositivos Móveis -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="shortcut icon" href="images/favicon.png" type="" />
+    <!-- Metadados do Site -->
+    <meta name="keywords" content="I-BYTE, tecnologia, Angola, desenvolvimento web, soluções digitais" />
+    <meta name="description" content="I-BYTE OTM, LDA - Soluções tecnológicas inovadoras para o seu negócio" />
+    <meta name="author" content="I-BYTE OTM, LDA" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 
     <title>I-BYTE OTM, LDA</title>
 
-    <!-- bootstrap core css -->
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-    <!-- fonts style -->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,19 +28,21 @@
       rel="stylesheet"
     />
 
-    <!--owl slider stylesheet -->
+    <!-- CSS Owl Carousel -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
 
-    <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Font Awesome (versão atualizada) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- No <head>, após os outros links de CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
     <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
+    <!-- CSS Responsivo -->
     <link href="css/responsive.css" rel="stylesheet" />
 
     <script type="text/javascript" src="js/itype.js"></script>
@@ -50,16 +52,16 @@
     <div class="hero_area">
       <div class="hero_bg_box">
         <div class="bg_img_box">
-          <img src="images/hero-bg.png" alt="" />
+          <img src="images/hero-bg.png" alt="Fundo hero" />
         </div>
       </div>
 
-      <!-- header section strats -->
+      <!-- Cabeçalho -->
       <header class="header_section container">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
-              <img src="./images/logo.png" width="200" />
+              <img src="./images/logo.png" width="200" alt="Logo I-BYTE" />
             </a>
 
             <button
@@ -71,381 +73,345 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class=""> </span>
+              <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html"
-                    >Home <span class="sr-only">(current)</span></a
+                    >Início <span class="sr-only">(atual)</span></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> Sobre</a>
+                  <a class="nav-link" href="about.html"> Sobre Nós</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="service.html">Serviços</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="why.html">Nós</a>
+                  <a class="nav-link" href="why.html">Porquê Nós</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="team.html">Team</a>
+                  <a class="nav-link" href="team.html">Equipa</a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
       </header>
-      <!-- end header section -->
-      <!-- slider section -->
-      <section class="slider_section">
+      <!-- Fim do Cabeçalho -->
+      
+      <!-- Seção do Slider -->
+      <section class="slider_section" data-aos="fade-up">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
               <div class="detail-box">
                 <h1>🧑‍💻 <span id="itype"></span></h1>
                 <p>
-                  Olá mundo!. Explicabo esse amet tempora quibusdam laudantium,
-                  Strongueira eaque magnam fugiat hic? Esse dicta Bartolomeu
-                  repudiandae Peter Lurdes fugiat Obed Mbui, veniam, vel Loydi
-                  Rosalina delectus repellat Victor clever.
+                  Olá mundo! Somos a I-BYTE OTM, LDA, especialistas em soluções tecnológicas 
+                  inovadoras. Oferecemos serviços de desenvolvimento web, aplicações móveis e 
+                  consultoria em TI para ajudar o seu negócio a prosperar na era digital.
                 </p>
                 <div class="btn-box">
                   <button class="btnDefault">
                     <span class="text">Ver mais ...</span>
                   </button>
-                  <!-- <a href="" class="btn1"> Read More </a> -->
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left">
               <div class="img-box">
-                <img src="images/banner1.png" alt="" />
+                <img src="images/banner1.png" alt="Banner Tecnologia" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- end slider section -->
+      <!-- Fim da Seção do Slider -->
     </div>
 
-    <!-- service section -->
-
-    <section class="service_section layout_padding">
+    <!-- Seção de Serviços -->
+    <section class="service_section layout_padding" data-aos="fade-up">
       <div class="service_container">
         <div class="container">
-          <div class="heading_container heading_center">
-            <h2>Our <span>Services</span></h2>
+          <div class="heading_container heading_center" data-aos="fade-up">
+            <h2>Nossos <span>Serviços</span></h2>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration
+              Oferecemos uma gama completa de soluções tecnológicas para impulsionar 
+              o seu negócio no mundo digital
             </p>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/s1.png" alt="" />
+                  <img src="images/s1.png" alt="Desenvolvimento Web" />
                 </div>
                 <div class="detail-box">
-                  <h5>Currency Wallet</h5>
+                  <h5>Desenvolvimento Web</h5>
                   <p>
-                    fact that a reader will be distracted by the readable
-                    content of a page when looking at its layout. The point of
-                    using
+                    Criação de websites profissionais, responsivos e otimizados para 
+                    motores de busca, garantindo a melhor experiência para os seus clientes.
                   </p>
-                  <a href=""> Read More </a>
+                  <a href=""> Saiba Mais </a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/s2.png" alt="" />
+                  <img src="images/s2.png" alt="Aplicações Móveis" />
                 </div>
                 <div class="detail-box">
-                  <h5>Security Storage</h5>
+                  <h5>Aplicações Móveis</h5>
                   <p>
-                    fact that a reader will be distracted by the readable
-                    content of a page when looking at its layout. The point of
-                    using
+                    Desenvolvimento de aplicativos Android e iOS personalizados para 
+                    expandir o alcance do seu negócio e engajar seus clientes.
                   </p>
-                  <a href=""> Read More </a>
+                  <a href=""> Saiba Mais </a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/s3.png" alt="" />
+                  <img src="images/s3.png" alt="Consultoria TI" />
                 </div>
                 <div class="detail-box">
-                  <h5>Expert Support</h5>
+                  <h5>Consultoria em TI</h5>
                   <p>
-                    fact that a reader will be distracted by the readable
-                    content of a page when looking at its layout. The point of
-                    using
+                    Especialistas em tecnologia para ajudar sua empresa a implementar 
+                    as melhores soluções digitais e otimizar seus processos.
                   </p>
-                  <a href=""> Read More </a>
+                  <a href=""> Saiba Mais </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="btn-box">
             <button class="btnDefault">
-              <span class="text">View All</span>
+              <span class="text">Ver Todos</span>
             </button>
-            <!-- <a href=""> View All </a> -->
           </div>
         </div>
       </div>
     </section>
+    <!-- Fim da Seção de Serviços -->
 
-    <!-- end service section -->
-
-    <!-- about section -->
-
-    <section class="about_section layout_padding">
+    <!-- Seção Sobre Nós -->
+    <section class="about_section layout_padding" data-aos="fade-up">
       <div class="container">
-        <div class="heading_container heading_center">
-          <h2>About <span>Us</span></h2>
+        <div class="heading_container heading_center" data-aos="fade-up">
+          <h2>Sobre <span>Nós</span></h2>
           <p>
-            Magni quod blanditiis non minus sed aut voluptatum illum quisquam
-            aspernatur ullam vel beatae rerum ipsum voluptatibus
+            Transformando ideias em soluções digitais inovadoras desde 2023
           </p>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right">
             <div class="img-box">
-              <img src="images/about-img.png" alt="" />
+              <img src="images/about-img.png" alt="Equipa I-BYTE" />
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-left">
             <div class="detail-box">
-              <h3>We Are Finexo</h3>
+              <h3>Somos a I-BYTE OTM, LDA</h3>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All
+                Fundada em Angola, a I-BYTE OTM, LDA é uma empresa de tecnologia 
+                dedicada a fornecer soluções digitais personalizadas para empresas 
+                de todos os tamanhos. Nossa missão é ajudar os negócios a prosperar 
+                na era digital através de tecnologia inovadora e serviços de qualidade.
               </p>
               <p>
-                Molestiae odio earum non qui cumque provident voluptates,
-                repellendus exercitationem, possimus at iste corrupti officiis
-                unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam
-                ab omnis quasi expedita.
+                Com uma equipa de profissionais experientes e apaixonados por tecnologia, 
+                combinamos criatividade, conhecimento técnico e atenção aos detalhes 
+                para entregar produtos que superam as expectativas dos nossos clientes.
               </p>
-              <a href=""> Read More </a>
+              <a href=""> Saiba Mais </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Fim da Seção Sobre Nós -->
 
-    <!-- end about section -->
-
-    <!-- why section -->
-
-    <section class="why_section layout_padding">
+    <!-- Seção Porquê Nós -->
+    <section class="why_section layout_padding" data-aos="fade-up">
       <div class="container">
-        <div class="heading_container heading_center">
-          <h2>Why Choose <span>Us</span></h2>
+        <div class="heading_container heading_center" data-aos="fade-up">
+          <h2>Porquê Escolher a <span>I-BYTE</span></h2>
         </div>
         <div class="why_container">
-          <div class="box">
+          <div class="box" data-aos="zoom-in" data-aos-delay="100">
             <div class="img-box">
-              <img src="images/w1.png" alt="" />
+              <img src="images/w1.png" alt="Gestão Especializada" />
             </div>
             <div class="detail-box">
-              <h5>Expert Management</h5>
+              <h5>Gestão Especializada</h5>
               <p>
-                Incidunt odit rerum tenetur alias architecto asperiores omnis
-                cumque doloribus aperiam numquam! Eligendi corrupti, molestias
-                laborum dolores quod nisi vitae voluptate ipsa? In tempore
-                voluptate ducimus officia id, aspernatur nihil. Tempore laborum
-                nesciunt ut veniam, nemo officia ullam repudiandae repellat
-                veritatis unde reiciendis possimus animi autem natus
+                Nossa equipa de gestão possui vasta experiência no setor tecnológico, 
+                garantindo que cada projeto seja conduzido com profissionalismo e 
+                atenção aos detalhes. Trabalhamos em estreita colaboração com os 
+                clientes para entender suas necessidades específicas.
               </p>
             </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in" data-aos-delay="200">
             <div class="img-box">
-              <img src="images/w2.png" alt="" />
+              <img src="images/w2.png" alt="Soluções Seguras" />
             </div>
             <div class="detail-box">
-              <h5>Secure Investment</h5>
+              <h5>Soluções Seguras</h5>
               <p>
-                Incidunt odit rerum tenetur alias architecto asperiores omnis
-                cumque doloribus aperiam numquam! Eligendi corrupti, molestias
-                laborum dolores quod nisi vitae voluptate ipsa? In tempore
-                voluptate ducimus officia id, aspernatur nihil. Tempore laborum
-                nesciunt ut veniam, nemo officia ullam repudiandae repellat
-                veritatis unde reiciendis possimus animi autem natus
+                Priorizamos a segurança em todos os nossos projetos. Implementamos 
+                as melhores práticas de segurança cibernética para proteger seus 
+                dados e os de seus clientes, garantindo conformidade com os padrões 
+                internacionais de proteção de dados.
               </p>
             </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in" data-aos-delay="300">
             <div class="img-box">
-              <img src="images/w3.png" alt="" />
+              <img src="images/w3.png" alt="Suporte Rápido" />
             </div>
             <div class="detail-box">
-              <h5>Instant Trading</h5>
+              <h5>Suporte Rápido</h5>
               <p>
-                Incidunt odit rerum tenetur alias architecto asperiores omnis
-                cumque doloribus aperiam numquam! Eligendi corrupti, molestias
-                laborum dolores quod nisi vitae voluptate ipsa? In tempore
-                voluptate ducimus officia id, aspernatur nihil. Tempore laborum
-                nesciunt ut veniam, nemo officia ullam repudiandae repellat
-                veritatis unde reiciendis possimus animi autem natus
+                Oferecemos suporte técnico ágil e eficiente para garantir que 
+                suas soluções digitais funcionem sem problemas. Nossa equipa 
+                está disponível para resolver quaisquer problemas e implementar 
+                melhorias contínuas.
               </p>
             </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in" data-aos-delay="400">
             <div class="img-box">
-              <img src="images/w4.png" alt="" />
+              <img src="images/w4.png" alt="Clientes Satisfeitos" />
             </div>
             <div class="detail-box">
-              <h5>Happy Customers</h5>
+              <h5>Clientes Satisfeitos</h5>
               <p>
-                Incidunt odit rerum tenetur alias architecto asperiores omnis
-                cumque doloribus aperiam numquam! Eligendi corrupti, molestias
-                laborum dolores quod nisi vitae voluptate ipsa? In tempore
-                voluptate ducimus officia id, aspernatur nihil. Tempore laborum
-                nesciunt ut veniam, nemo officia ullam repudiandae repellat
-                veritatis unde reiciendis possimus animi autem natus
+                Nosso maior orgulho é a satisfação dos nossos clientes. Já ajudamos 
+                diversas empresas a alcançar seus objetivos digitais, e nosso 
+                portfólio de casos de sucesso continua a crescer.
               </p>
             </div>
           </div>
         </div>
         <div class="btn-box">
-          <a href=""> Read More </a>
+          <a href=""> Saiba Mais </a>
         </div>
       </div>
     </section>
+    <!-- Fim da Seção Porquê Nós -->
 
-    <!-- end why section -->
-
-    <!-- team section -->
-    <section class="team_section layout_padding">
+    <!-- Seção da Equipa -->
+    <section class="team_section layout_padding" data-aos="fade-up">
       <div class="container-fluid">
-        <div class="heading_container heading_center">
-          <h2 class="">Our <span> Team</span></h2>
+        <div class="heading_container heading_center" data-aos="fade-up">
+          <h2 class="">Nossa <span> Equipa</span></h2>
         </div>
 
         <div class="team_container">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6" data-aos="flip-left" data-aos-delay="100">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team-1.jpg" class="img1" alt="" />
+                  <img src="images/team-1.jpg" class="img1" alt="Victor Clever" />
                 </div>
                 <div class="detail-box">
-                  <h5>Joseph Brown</h5>
-                  <p>Marketing Head</p>
+                  <h5>Victor Clever</h5>
+                  <p>Diretor Técnico</p>
                 </div>
                 <div class="social_box">
                   <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6" data-aos="flip-left" data-aos-delay="200">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team-2.jpg" class="img1" alt="" />
+                  <img src="images/team-2.jpg" class="img1" alt="Loydi Rosalina" />
                 </div>
                 <div class="detail-box">
-                  <h5>Nancy White</h5>
-                  <p>Marketing Head</p>
+                  <h5>Loydi Rosalina</h5>
+                  <p>Chefe de Marketing</p>
                 </div>
                 <div class="social_box">
                   <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6" data-aos="flip-left" data-aos-delay="300">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team-3.jpg" class="img1" alt="" />
+                  <img src="images/team-3.jpg" class="img1" alt="Obed Mbui" />
                 </div>
                 <div class="detail-box">
-                  <h5>Earl Martinez</h5>
-                  <p>Marketing Head</p>
+                  <h5>Obed Mbui</h5>
+                  <p>Desenvolvedor Sênior</p>
                 </div>
                 <div class="social_box">
                   <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-sm-6" data-aos="flip-left" data-aos-delay="400">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/team-4.jpg" class="img1" alt="" />
+                  <img src="images/team-4.jpg" class="img1" alt="Peter Lurdes" />
                 </div>
                 <div class="detail-box">
-                  <h5>Josephine Allard</h5>
-                  <p>Marketing Head</p>
+                  <h5>Peter Lurdes</h5>
+                  <p>Designer UX/UI</p>
                 </div>
                 <div class="social_box">
                   <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -454,34 +420,33 @@
         </div>
       </div>
     </section>
-    <!-- end team section -->
+    <!-- Fim da Seção da Equipa -->
 
-    <!-- client section -->
-
-    <section class="client_section layout_padding">
+    <!-- Seção de Depoimentos -->
+    <section class="client_section layout_padding" data-aos="fade-up">
       <div class="container">
-        <div class="heading_container heading_center psudo_white_primary mb_45">
-          <h2>What says our <span>Customers</span></h2>
+        <div class="heading_container heading_center psudo_white_primary mb_45" data-aos="fade-up">
+          <h2>O que dizem nossos <span>Clientes</span></h2>
         </div>
-        <div class="carousel-wrap">
+        <div class="carousel-wrap" data-aos="zoom-in">
           <div class="owl-carousel client_owl-carousel">
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client1.jpg" alt="" class="box-img" />
+                  <img src="images/client1.jpg" alt="Cliente LusDen" class="box-img" />
                 </div>
                 <div class="detail-box">
                   <div class="client_id">
                     <div class="client_info">
                       <h6>LusDen</h6>
-                      <p>magna aliqua. Ut</p>
+                      <p>CEO, Empresa XYZ</p>
                     </div>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis
+                    "A I-BYTE transformou completamente nossa presença online. 
+                    O website que desenvolveram superou todas as nossas expectativas 
+                    e resultou em um aumento significativo de leads qualificados."
                   </p>
                 </div>
               </div>
@@ -489,62 +454,20 @@
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="images/client2.jpg" alt="" class="box-img" />
+                  <img src="images/client2.jpg" alt="Cliente Zen Court" class="box-img" />
                 </div>
                 <div class="detail-box">
                   <div class="client_id">
                     <div class="client_info">
                       <h6>Zen Court</h6>
-                      <p>magna aliqua. Ut</p>
+                      <p>Diretor, ABC Tecnologia</p>
                     </div>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/client1.jpg" alt="" class="box-img" />
-                </div>
-                <div class="detail-box">
-                  <div class="client_id">
-                    <div class="client_info">
-                      <h6>LusDen</h6>
-                      <p>magna aliqua. Ut</p>
-                    </div>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/client2.jpg" alt="" class="box-img" />
-                </div>
-                <div class="detail-box">
-                  <div class="client_id">
-                    <div class="client_info">
-                      <h6>Zen Court</h6>
-                      <p>magna aliqua. Ut</p>
-                    </div>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis
+                    "Trabalhar com a I-BYTE foi uma experiência excepcional. 
+                    Sua equipe técnica é altamente competente e entregou nosso 
+                    aplicativo móvel antes do prazo, com excelente qualidade."
                   </p>
                 </div>
               </div>
@@ -553,54 +476,52 @@
         </div>
       </div>
     </section>
+    <!-- Fim da Seção de Depoimentos -->
 
-    <!-- end client section -->
-
-    <!-- info section -->
-
+    <!-- Seção de Informações -->
     <section class="info_section layout_padding2">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 info_col">
             <div class="info_contact">
-              <h4>Address</h4>
+              <h4>Contactos</h4>
               <div class="contact_link_box">
                 <a href="">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span> Location </span>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <span> Luanda, Angola </span>
                 </a>
                 <a href="">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span> Telefone: 949486030 </span>
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  <span> Telefone: +244 949 486 030 </span>
                 </a>
                 <a href="">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
                   <span> ibyte.otm.lda@gmail.com </span>
                 </a>
               </div>
             </div>
             <div class="info_social">
               <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
               <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
               </a>
               <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
               </a>
               <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 info_col">
             <div class="info_detail">
-              <h4>Info</h4>
+              <h4>Sobre a I-BYTE</h4>
               <p>
-                necessary, making this the first true generator on the Internet.
-                It uses a dictionary of over 200 Latin words, combined with a
-                handful
+                Somos uma empresa angolana de tecnologia comprometida em fornecer 
+                soluções digitais inovadoras e personalizadas para ajudar negócios 
+                a prosperar na era digital.
               </p>
             </div>
           </div>
@@ -608,39 +529,38 @@
             <div class="info_link_box">
               <h4>Links</h4>
               <div class="info_links">
-                <a class="active" href="index.html"> Home </a>
-                <a class="" href="about.html"> About </a>
-                <a class="" href="service.html"> Services </a>
-                <a class="" href="why.html"> Why Us </a>
-                <a class="" href="team.html"> Team </a>
+                <a class="active" href="index.html"> Início </a>
+                <a class="" href="about.html"> Sobre Nós </a>
+                <a class="" href="service.html"> Serviços </a>
+                <a class="" href="why.html"> Porquê Nós </a>
+                <a class="" href="team.html"> Equipa </a>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 info_col">
-            <h4>Subscribe</h4>
+            <h4>Newsletter</h4>
             <form action="#">
-              <input type="text" placeholder="Enter email" />
-              <button type="submit">Subscribe</button>
+              <input type="text" placeholder="Digite seu email" />
+              <button type="submit">Subscrever</button>
             </form>
           </div>
         </div>
       </div>
     </section>
+    <!-- Fim da Seção de Informações -->
 
-    <!-- end info section -->
-
-    <!-- footer section -->
+    <!-- Rodapé -->
     <section class="footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          &copy; <span id="displayYear"></span> I-BYTE OTM, LDA
+          <a href="https://github.com/VictorClever03">Victor Clever</a>
         </p>
       </div>
     </section>
-    <!-- footer section -->
+    <!-- Fim do Rodapé -->
 
-    <!-- whatsapp icon -->
+    <!-- Botão do WhatsApp -->
     <button class="BtnWhatsapp">
       <div class="sign">
         <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
@@ -649,11 +569,21 @@
           ></path>
         </svg>
       </div>
-      <a href="https://wa.me/949486030" class="text">Wa.me☝️</a>
+      <a href="https://wa.me/244949486030?text=Olá%20I-BYTE%20OTM,%20Estou%20vindo%20directamente%20do%20vosso%20site" class="text">Chat ☝️</a>
     </button>
 
-    <!-- end Whatsapp -->
+    <!-- Scripts -->
+    <!-- Antes dos outros scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      // Inicialize o AOS
+      AOS.init({
+        duration: 800, // Duração da animação em ms
+        easing: 'ease-in-out', // Tipo de easing
+        once: true, // Anima apenas uma vez
+        mirror: false, // Não anima novamente ao rolar de volta
+      });
+      // ityped.js
       window.ityped.init(document.querySelector("#itype"), {
         showCursor: true,
         strings: [
@@ -667,25 +597,22 @@
         startDelay: 1000,
       });
     </script>
-    <!-- jQery -->
+    <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- popper js -->
+    <!-- Popper JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap js -->
+    <!-- Bootstrap JS -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- owl slider -->
+    <!-- Owl Carousel -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     ></script>
-    <!-- custom js -->
+    <!-- JS Personalizado -->
     <script type="text/javascript" src="js/custom.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-    <!-- End Google Map -->
   </body>
 </html>
