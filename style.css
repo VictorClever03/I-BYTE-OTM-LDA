@@ -1,0 +1,33 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.blue-gradient {
+    background: linear-gradient(135deg, #0e1c3a 0%, #1a3a6e 100%);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ityped cursor styling */
+.ityped-cursor {
+    font-size: 0.8em;
+    opacity: 0.8;
+}

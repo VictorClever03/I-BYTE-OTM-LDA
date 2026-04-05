@@ -1,0 +1,8 @@
+
+{
+  "name": "I-Byte OtM, Lda - Soluções Gráficas",
+  "description": "Website profissional para a empresa de artes gráficas I-Byte OtM, Lda, sediada em Cacuaco, Angola.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Byte OtM, Lda | Soluções Gráficas em Cacuaco</title>
+    <!-- Favicon - Printer Icon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231d4ed8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 6 2 18 2 18 9'></polyline><path d='M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2'></path><rect x='6' y='14' width='12' height='8'></rect></svg>">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons and itype.js -->
+    <script type="text/javascript" src="itype.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#inicio" class="flex items-center gap-2">
+                <!-- LOGO PLACEHOLDER: Replace this div with an <img> tag for your real logo -->
+                <div id="logo-box"
+                    class="w-12 h-12 rounded-lg flex items-center justify-center bg-white/10 backdrop-blur transition-colors duration-300 hidden lg:flex">
+                    <i data-lucide="printer" class="w-7 h-7 text-white"></i>
+                </div>
+                <img src="images/logo.png" width="150" />
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="#inicio"
+                    class="nav-link text-sm font-medium text-white/90 hover:text-blue-500 transition-colors">Início</a>
+                <a href="#sobre"
+                    class="nav-link text-sm font-medium text-white/90 hover:text-blue-500 transition-colors">Sobre
+                    Nós</a>
+                <a href="#servicos"
+                    class="nav-link text-sm font-medium text-white/90 hover:text-blue-500 transition-colors">Serviços</a>
+                <a href="#galeria"
+                    class="nav-link text-sm font-medium text-white/90 hover:text-blue-500 transition-colors">Galeria</a>
+                <a href="#contacto"
+                    class="nav-link text-sm font-medium text-white/90 hover:text-blue-500 transition-colors">Contacto</a>
+                <a href="#contacto"
+                    class="bg-[#1d4ed8] hover:bg-[#1e40af] text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg hover:shadow-blue-500/25">
+                    Pedir Orçamento
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="lg:hidden" id="menu-toggle">
+                <i data-lucide="menu" id="menu-icon" class="text-white w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl">
+            <div class="flex flex-col p-6 gap-4">
+                <a href="#inicio"
+                    class="mobile-link text-slate-700 text-lg font-medium border-b border-slate-100 pb-2">Início</a>
+                <a href="#sobre"
+                    class="mobile-link text-slate-700 text-lg font-medium border-b border-slate-100 pb-2">Sobre Nós</a>
+                <a href="#servicos"
+                    class="mobile-link text-slate-700 text-lg font-medium border-b border-slate-100 pb-2">Serviços</a>
+                <a href="#galeria"
+                    class="mobile-link text-slate-700 text-lg font-medium border-b border-slate-100 pb-2">Galeria</a>
+                <a href="#contacto"
+                    class="mobile-link text-slate-700 text-lg font-medium border-b border-slate-100 pb-2">Contacto</a>
+                <a href="#contacto"
+                    class="mobile-link bg-[#0e1c3a] text-white text-center py-3 rounded-lg font-bold">Pedir
+                    Orçamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-[6rem] overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[#0e1c3a] mix-blend-multiply opacity-90"></div>
+            <!-- REPLACE HERO BACKGROUND IMAGE -->
+            <img src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?q=80&w=1920&auto=format&fit=crop"
+                alt="Printing background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0e1c3a] via-transparent to-transparent"></div>
+        </div>
+
+        <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+            <div class="w-full h-full border-l-2 border-dashed border-white/20 transform skew-x-12"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-white flex items-center justify-between">
+            <div class="max-w-3xl">
+                <div
+                    class="inline-block bg-blue-500/20 backdrop-blur-md border border-blue-400/30 px-4 py-2 rounded-full mb-6">
+                    <span class="text-blue-200 text-sm font-semibold uppercase tracking-widest">Excelência em
+                        Cacuaco</span>
+                </div>
+                <h1 class="text-4xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Soluções <br /> <span class="text-blue-400" id="itype"></span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl">
+                    Da impressão que marca à gestão que impulsiona a qualidade gráfica e facturação inteligente com o
+                    xdSoftware, tudo num só parceiro.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto"
+                        class="bg-[#1d4ed8] hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-xl shadow-blue-500/20 group">
+                        Solicitar Orçamento
+                        <i data-lucide="chevron-right"
+                            class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="tel:+244949486030"
+                        class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all">
+                        Contactar Agora
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center justify-end">
+                <img src="images/home apontandno na direita.jpg" alt="Homem apontando para a direita"
+                    class="w-[400px] h-[400px] object-cover rounded-full shadow-2xl hidden lg:block">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
+                    <!-- REPLACE ABOUT IMAGE -->
+                    <img src="images/about1.jpeg" alt="A nossa equipa"
+                        class="rounded-2xl shadow-2xl relative z-10 w-full object-cover h-[500px] object-center">
+                    <div
+                        class="absolute -bottom-10 -right-10 bg-[#0e1c3a] text-white p-8 rounded-2xl shadow-xl z-20 hidden md:block">
+                        <p class="text-4xl font-bold mb-1">100%</p>
+                        <p class="text-sm opacity-80">Comprometidos com a Qualidade</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h4 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Quem Somos</h4>
+                    <!-- <h2 class="text-4xl md:text-5xl font-extrabold text-[#0e1c3a] mb-6 leading-tight">
+                        Lideramos a Inovação Gráfica em <span class="text-blue-600 underline underline-offset-8">Angola</span>
+                    </h2> -->
+                    <img src="images/logonew.png" alt="Logo I-Byte OtM"
+                        class="w-full max-w-md mb-8 rounded-xl h-[200px]">
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        A <b>I-Byte OtM, Lda</b> é uma solução completa para o seu negócio. Oferecemos serviços de
+                        impressão de alta qualidade, incluindo cartões de visita, timbragens e blocos de facturas.
+                        Complementamos esses serviços com software de facturação eficiente e software de gestão de
+                        recursos humanos, além de prestação de serviços especializados em contabilidade e constituição
+                        de novas empresas.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex gap-4">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 shrink-0">
+                                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0e1c3a]">Melhor Qualidade</h5>
+                                <p class="text-slate-500 text-sm">Tintas e papéis de primeira linha.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 shrink-0">
+                                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0e1c3a]">Entrega Rápida</h5>
+                                <p class="text-slate-500 text-sm">Respeitamos os seus prazos com rigor.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 shrink-0">
+                                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0e1c3a]">Preço Justo</h5>
+                                <p class="text-slate-500 text-sm">Soluções competitivas no mercado.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mt-1 shrink-0">
+                                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0e1c3a]">Atendimento</h5>
+                                <p class="text-slate-500 text-sm">Suporte personalizado para cada projeto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-[#f8fafc]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h4 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Nossos Serviços</h4>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-[#0e1c3a] mb-6">O que fazemos por si</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">
+                    Soluções completas de design e impressão para levar a sua comunicação visual ao próximo nível.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0e1c3a] group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="printer" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Impressão Digital</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Alta qualidade em pequenos e grandes formatos com
+                        tecnologia de ponta.</p>
+                    <a href="#contacto"
+                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                       Entre em contacto para saber mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0e1c3a] group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="credit-card" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Cartões de Visita</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">A primeira impressão é a que fica. Cartões
+                        profissionais com acabamentos premium.</p>
+                    <a href="#contacto"
+                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                       Entre em contacto para saber mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0e1c3a] group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="layers" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Flyers e Panfletos</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Promova o seu negócio com material publicitário
+                        impactante e cores vibrantes.</p>
+                    <a href="#contacto"
+                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                       Entre em contacto para saber mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0e1c3a] group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="layout" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Criação e Design</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Criação de logotipos e identidade visual que traduzem
+                        a essência da sua marca.</p>
+                    <a href="#contacto"
+                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                       Entre em contacto para saber mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0e1c3a] group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="file-text" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Timbragens</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Timbragens profissionais com logotipo e identidade
+                        corporativa para toda a sua documentação.</p>
+                    <a href="#contacto"
+                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                       Entre em contacto para saber mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#0e1c3a] group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="stamp" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Carimbos Personalizados</h3>
+                    <p class="text-slate-500 leading-relaxed mb-6">Criação e personalização de carimbos profissionais
+                        com designs exclusivos para a sua empresa.</p>
+                    <a href="#contacto"
+                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                       Entre em contacto para saber mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Software Solutions Section -->
+            <div class="mt-20 pt-20 border-t border-slate-200">
+                <div class="text-center mb-16">
+                    <h4 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Soluções Complementares
+                    </h4>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#0e1c3a] mb-6">Softwares</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto text-lg">
+                        Gestão inteligente de facturação e recursos humanos para potenciar o seu negócio.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-blue-50 to-white p-10 rounded-3xl border border-blue-100 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer"
+                        onclick="openModal('facturacao')">
+                        <img src="images/xd2025-removebg-preview.png" alt="xdSoftware"
+                            class="w-16 h-16 mb-6 object-contain">
+                        <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Software de Facturação</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Sistema robusto e intuitivo para gestão de facturas, controlo de pagamentos e conformidade
+                            fiscal automática.
+                        </p>
+                        <a href="#contacto"
+                            class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                            Conhecer Mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-white p-10 rounded-3xl border border-blue-100 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer"
+                        onclick="openModal('rh')">
+                        <img src="images/donnah_rh_logo-removebg-preview.png" alt="xdSoftware"
+                            class="w-16 h-16 mb-6 object-contain">
+                        <h3 class="text-2xl font-bold text-[#0e1c3a] mb-4">Gestão de Recursos Humanos</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Plataforma completa para folhas de pagamento, assiduidade, desempenho e administração de
+                            pessoal.
+                        </p>
+                        <a href="#contacto"
+                            class="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                            Conhecer Mais <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="softwareModal"
+                        class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+                        <div class="bg-white rounded-3xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 id="modalTitle" class="text-3xl font-bold text-[#0e1c3a]"></h2>
+                                <button onclick="closeModal()" class="text-slate-500 hover:text-slate-700">
+                                    <i data-lucide="x" class="w-6 h-6"></i>
+                                </button>
+                            </div>
+                            <div id="modalContent" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h4 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Portfólio</h4>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#0e1c3a]">Projetos Realizados</h2>
+                </div>
+                <p class="text-slate-500 max-w-md md:text-right mt-4 md:mt-0">
+                    Uma amostra do nosso compromisso com a perfeição em cada detalhe impresso.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item -->
+                <div class="relative group overflow-hidden rounded-2xl aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=800&auto=format&fit=crop"
+                        alt="Portfolio 1"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-[#0e1c3a]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
+                        <h4
+                            class="text-white text-xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform">
+                            Cartazes Publicitários</h4>
+                        <div
+                            class="w-12 h-1 bg-blue-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop"
+                        alt="Portfolio 2"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-[#0e1c3a]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
+                        <h4
+                            class="text-white text-xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform">
+                            Branding Corporativo</h4>
+                        <div
+                            class="w-12 h-1 bg-blue-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=800&auto=format&fit=crop"
+                        alt="Portfolio 3"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-[#0e1c3a]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-6">
+                        <h4
+                            class="text-white text-xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform">
+                            Material Promocional</h4>
+                        <div
+                            class="w-12 h-1 bg-blue-500 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform origin-center">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Carousel Navigation -->
+            <div class="flex justify-center items-center gap-4 mt-8">
+                <button id="prevBtn" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all">
+                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                </button>
+                <div class="flex gap-2">
+                    <span class="w-3 h-3 bg-blue-600 rounded-full cursor-pointer" data-slide="0"></span>
+                    <span class="w-3 h-3 bg-slate-300 rounded-full cursor-pointer" data-slide="1"></span>
+                    <span class="w-3 h-3 bg-slate-300 rounded-full cursor-pointer" data-slide="2"></span>
+                </div>
+                <button id="nextBtn" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-[#0e1c3a] text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/3">
+                    <h2 class="text-4xl font-extrabold mb-8">Vamos Criar <br>Algo <span
+                            class="text-blue-400">Incrível?</span></h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Telefone
+                                </p>
+                                <a href="tel:+244949486030"
+                                    class="text-xl font-bold hover:text-blue-400 transition-colors">+244 949 486 030</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">E-mail</p>
+                                <a href="mailto:ibyte.otm.lda@gmail.com"
+                                    class="text-xl font-bold hover:text-blue-400 transition-colors">ibyte.otm.lda@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">
+                                    Localização</p>
+                                <p class="text-xl font-bold">Cacuaco, Luanda, Angola</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Horário
+                                </p>
+                                <p class="text-sm font-medium leading-relaxed opacity-80">Seg - Sex: 08h00 - 17h00 |
+                                    Sáb: 08h00 - 13h00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-12">
+                        <a href="https://www.facebook.com/share/1FHWpPvrms/" target="_blank"
+                            class="w-12 h-12 bg-white/5 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all border border-white/10">
+                            <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                        </a>
+                        <a target="_blank"
+                            href="https://www.instagram.com/ibyte_otm_lda?igsh=MTN6ZnplbDUyNG1kcQ==&utm_source=ig_contact_invite"
+                            class="w-12 h-12 bg-white/5 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all border border-white/10">
+                            <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3">
+                    <div class="bg-white rounded-3xl p-8 md:p-12 text-slate-800 shadow-2xl overflow-hidden relative">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 -mr-16 -mt-16 rounded-full"></div>
+                        <form id="contact-form" class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-bold text-slate-700">Nome Completo</label>
+                                <input type="text" placeholder="Seu nome"
+                                    class="bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-bold text-slate-700">E-mail</label>
+                                <input type="email" placeholder="seu@email.com"
+                                    class="bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                            <div class="flex flex-col gap-2 md:col-span-2">
+                                <label class="text-sm font-bold text-slate-700">Assunto</label>
+                                <select
+                                    class="bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all appearance-none">
+                                    <option>Impressão Digital</option>
+                                    <option>Cartões de Visita</option>
+                                    <option>Design Gráfico</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2 md:col-span-2">
+                                <label class="text-sm font-bold text-slate-700">Mensagem</label>
+                                <textarea rows="4" placeholder="Como podemos ajudar?"
+                                    class="bg-slate-50 border border-slate-200 px-5 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
+                            </div>
+                            <div class="md:col-span-2">
+                                <button type="submit"
+                                    class="w-full bg-[#1d4ed8] hover:bg-blue-700 text-white font-bold py-5 rounded-xl transition-all shadow-xl shadow-blue-500/20">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Map Embed -->
+                    <div class="mt-8 rounded-3xl overflow-hidden shadow-2xl h-[300px] border-4 border-white/10">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63066.628294669004!2d13.1698635!3d-8.9107705!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51fb711248b549%3A0x995cd3129694bc63!2sI-Byte%20OtM%2C%20Lda!5e0!3m2!1spt-PT!2sao!4v1771322517180!5m2!1spt-PT!2sao"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <!-- <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63080.37086438031!2d13.31505704173822!3d-8.831525287515124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f8a85f4007f3%3A0x633d7b43b9c6f966!2sCacuaco%2C%20Angola!5e0!3m2!1spt-PT!2s!4v1716200000000!5m2!1spt-PT!2s" 
+                            width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0b152b] py-12 text-slate-500 text-center border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center gap-6 mb-8">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="printer" class="w-8 h-8 text-white"></i>
+                    <img src="images/logo.png" width="200" alt="I-Byte Logo" />
+                </div>
+                <p class="max-w-md">Soluções gráficas modernas para empresas dinâmicas. O seu sucesso impresso começa
+                    aqui.</p>
+            </div>
+            <div
+                class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p id="copyright">© 2025 I-Byte OtM, Lda. Todos os direitos reservados.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Termos e Condições</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/244949486030" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-8 right-8 z-[100] bg-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group">
+        <div
+            class="absolute inset-0 bg-blue-500 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-full">
+        </div>
+        <i data-lucide="message-circle" class="w-7 h-7 relative z-10 text-white"></i>
+        <span
+            class="absolute right-full mr-4 bg-white text-[#0e1c3a] px-4 py-2 rounded-lg font-bold shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+            Fale connosco!
+        </span>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // ityped.js
+        ityped.init(document.querySelector("#itype"), {
+            showCursor: true,
+            strings: [
+                " ",
+                "Profissionais",
+                "Simples",
+                "E Eficientes",
+            ],
+            backDelay: 2000,
+            startDelay: 1000,
+        });
+    </script>
+    <script src="modal.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
