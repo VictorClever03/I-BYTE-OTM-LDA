@@ -1,3 +1,5 @@
+emailjs.init("e8f5LtBw1pGbl1x01");
+
 // Initialize Lucide Icons
 lucide.createIcons();
 
@@ -56,9 +58,9 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
     const isMenuOpen = mobileMenu.classList.contains('active');
-    
+
     // Change menu icon between hamburger and X
-    if(isMenuOpen) {
+    if (isMenuOpen) {
         menuIcon.setAttribute('data-lucide', 'x');
     } else {
         menuIcon.setAttribute('data-lucide', 'menu');
@@ -80,7 +82,15 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Obrigado! A sua mensagem foi enviada. Entraremos em contacto em breve.');
-        e.target.reset();
+        emailjs.send("service_f6x672m", "template_jpvfwsl", {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            title: e.target.title.value,
+            message: e.target.message.value,
+        }).then(() => {
+            alert("Email enviado com sucesso!");
+        }).catch((err) => {
+            console.log(err);
+        });
     });
 }
